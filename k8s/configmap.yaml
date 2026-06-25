@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: site-web-html
+  namespace: default
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Déploiement GitOps</title>
+    </head>
+    <body>
+        <h1>Déployé via ArgoCD et Jenkins</h1>
+        <p>Pipeline complet : Jenkins, SonarQube, Ansible, ArgoCD.</p>
+    </body>
+    </html>
